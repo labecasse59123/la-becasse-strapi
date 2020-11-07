@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "hunting_sessions",
+  "info": {
+    "name": "HuntingSession"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "duration": {
+      "type": "enumeration",
+      "enum": [
+        "morning",
+        "afternoon",
+        "day"
+      ],
+      "default": "day"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "hunting_sessions"
+    }
+  }
+}

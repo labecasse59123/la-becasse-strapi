@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hunting-sessions",
+      "handler": "hunting-session.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hunting-sessions/count",
+      "handler": "hunting-session.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hunting-sessions/:id",
+      "handler": "hunting-session.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hunting-sessions",
+      "handler": "hunting-session.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hunting-sessions/:id",
+      "handler": "hunting-session.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hunting-sessions/:id",
+      "handler": "hunting-session.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
